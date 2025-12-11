@@ -28,6 +28,10 @@ public class Held {
         }
         lebenspunkte = lebenspunkte - schaden;
         System.out.println("Der Drache hat dich mit "+schaden+" HP Angegriffen, du hast "+ schaden+" Lebenspunkte verloren. Es bleiben dir "+ lebenspunkte+" Lebenspunkte");
+        if (lebenspunkte <=0){
+            System.out.println("Der Held verliert und fällst zu Boden. Du bist Tod");
+            
+        }
     }
 
     public void angriff() {
