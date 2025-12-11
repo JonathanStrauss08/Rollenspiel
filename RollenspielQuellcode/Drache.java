@@ -28,8 +28,8 @@ public class Drache{
 
     public int  angriff(){
         if(zufallszahl(0,100)>90){
-            System.out.println("Der Drache greift speit Feuer und greift dich mit "+angriffschaden*10+" an");        
-            return angriffschaden;
+            System.out.println("Der Drache speit Feuer und greift dich mit "+angriffschaden*10+" an");        
+            return angriffschaden*10;
         }
         System.out.println("Der Drache greift mit"+angriffschaden+" an");        
         return angriffschaden;
